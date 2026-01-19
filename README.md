@@ -33,5 +33,8 @@ En db, usamos una imagen mysql, ponemos que siempre se reincie cuando el contene
 
 Es necesario definir los volumenes y los networks que creemos.
 
+### Imagen Docker publicada
+
+[![Docker Image Version](https://img.shields.io/docker/v/foreignuser/docker-compose-web?label=docker%20hub)](https://hub.docker.com/repository/docker/foreignuser/docker-compose-web)
 
 

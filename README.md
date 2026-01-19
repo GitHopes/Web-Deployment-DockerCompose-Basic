@@ -4,27 +4,15 @@ Requisitos: Tener una base de datos y una aplicación web php (el archivo .sql y
 
 ## Estructura de Proyecto
 
-PR1/
-├── docker-compose.yml
-├── Dockerfile
-├── app/
-│   └── index.php
-└── db/
-    └── database.sql
+<img width="314" height="172" alt="image" src="https://github.com/user-attachments/assets/9d7eeee7-ad29-45fc-b248-0aecf072d18a" />
+
 
 ## Edicion De Documentos
 
 ### En el Dockerfile
 
-FROM php:8.2-apache
+<img width="624" height="304" alt="image" src="https://github.com/user-attachments/assets/da84415e-1855-4784-b590-f146e65eb255" />
 
-COPY app/ /var/www/html/
-
-RUN chown -R www-data:www-data /var/www/html
-
-RUN docker-php-ext-install mysqli
-
-EXPOSE 80
 
 #### comentarios
 Descargamos la imagen php con apache y construimos
@@ -36,6 +24,8 @@ Por ultimo, expones el puerto 80 de php.
 ### En docker-compose.yml
 
 <img width="765" height="589" alt="image" src="https://github.com/user-attachments/assets/2bbcee79-8e42-455a-88da-7c93910b4a2c" />
+
+### Comentarios Finales
 
 Entre los servicios, web usamos la que ya tenemos es decir construimos con el dockerfile, asignamos puertos, decimos que depende de otro servicio, y le conectamos a la misma red que la base de datos.
 
